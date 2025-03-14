@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <img src="logo.png" alt="Logo de la Distribuidora" class="logo" />
+        <nav class="navbar">
+          <a href="index.html">Inicio</a>
+          <a href="#">Catálogo</a>
+        </nav>
+      </div>
+    </header>
+
+    <h1 class="titulo-catalogo">📦 Catálogo de Productos</h1>
+
+    <button id="toggle-carrito">🛒 Ver Carrito</button>
+    <button id="boton-carrito" onclick="irAlCarrito()">🛒</button>
+
+    <div id="carrito-container" class="oculto">
+      <h2>🛒 Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <h3>📋 Información del Cliente</h3>
+      <form id="formulario-pedido">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" required />
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required />
+        <button type="button" id="enviar-whatsapp">📩 Enviar a WhatsApp</button>
+      </form>
+    </div>
+
+    <div id="productos-container">
+
+    </div>
+  
+    <script src="catalogo.js"></script>
+  </body>
+</html>
